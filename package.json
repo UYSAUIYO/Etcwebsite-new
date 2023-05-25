@@ -20,6 +20,8 @@
     "jquery": "^3.6.3",
     "less": "^3.8.1",
     "less-loader": "^4.1.0",
+    "markdown-it": "^13.0.1",
+    "mavon-editor": "^2.10.4",
     "muse-ui": "^3.0.0",
     "mxdraw": "^0.1.119",
     "prerender-spa-plugin": "^3.4.0",

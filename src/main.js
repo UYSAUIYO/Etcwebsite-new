@@ -10,6 +10,8 @@ import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
 import hevueImgPreview from 'hevue-img-preview';
 import APlayer from '@moefe/vue-aplayer';
+import mavonEditor from 'mavon-editor'
+import 'mavon-editor/dist/css/index.css'
 
 
 Vue.use(MetaInfo);
@@ -23,6 +25,7 @@ Vue.use(ImageViewer);
 Vue.use(ElementUI);
 Vue.use(hevueImgPreview);
 Vue.config.productionTip = false;
+Vue.use(mavonEditor)
 
 new Vue({
 	vuetify,
