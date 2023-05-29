@@ -29,7 +29,7 @@
             <v-card-title>审核规定</v-card-title>
             <v-card-subtitle>审核流程介绍</v-card-subtitle>
             <v-card-text>
-
+              <div v-html="markdownHtml1"></div>
             </v-card-text>
           </v-card>
         </v-tab-item>
@@ -37,7 +37,9 @@
           <v-card flat :dark="dark">
             <v-card-title>红石</v-card-title>
             <v-card-subtitle>审核流程介绍</v-card-subtitle>
-           <v-card-text></v-card-text>
+           <v-card-text>
+             <div v-html="markdownHtml2"></div>
+           </v-card-text>
           </v-card>
         </v-tab-item>
         <v-tab-item>
@@ -45,7 +47,9 @@
             <v-card-text>
               <v-card-title>后勤要求</v-card-title>
               <v-card-subtitle>审核流程介绍</v-card-subtitle>
-              <v-card-text></v-card-text>
+              <v-card-text>
+                <div v-html="markdownHtml3"></div>
+              </v-card-text>
             </v-card-text>
           </v-card>
         </v-tab-item>
@@ -54,7 +58,7 @@
             <v-card-text>
               <v-card-title>建筑</v-card-title>
               <v-card-subtitle>审核要求介绍 Beta</v-card-subtitle>
-
+              <div v-html="markdownHtml4"></div>
             </v-card-text>
           </v-card>
         </v-tab-item>
@@ -64,13 +68,23 @@
 </template>
 
 <script>
-
+import Axios from "axios";
+import Markdown from 'markdown-it';
+import axios from "axios";
 export default {
   name: "BotSetps",
   components: {},
   data() {
     return {
+      markdownHtml1:'',
+      markdownHtml2:'',
+      markdownHtml3:'',
+      markdownHtml4:'',
+      markdowntext:''
     };
+  },
+  mounted() {
+    this.renderMarkdown();
   },
   watch:{
     loader (){
@@ -83,17 +97,10 @@ export default {
     }
   },
   methods: {
-    tftip(){
-      const tfttiph = this.$createElement;
-      this.$notify({
-        title:'考察期',
-        message:tfttiph('i','考察期指的是新成员入服七天内的综合表现。'),
-        type:'warning',
-        position:'bottom-left',
-        showClose:false,
-        offset:100
-      })
-    },
+      renderMarkdown(){
+        const md = Markdown();
+       const res = axios.get('http://localhost:3000/api/renderHtml1')
+      }
   },
   props: {
     dark: {
