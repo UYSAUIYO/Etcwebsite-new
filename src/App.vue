@@ -41,16 +41,19 @@
         <f-donate :dark="dark"></f-donate>
         <f-donates :dark="dark"></f-donates>
         <f-pick-show :dark="dark"></f-pick-show>
-        <van-divider
-            :style="{ borderColor: '#2196f3', padding: '0 16px' }"
-        >
-        </van-divider>
+          <v-divider
+                  inset
+          ></v-divider>
         <v-list-item :dark="dark"><v-list-item-content><v-list-item-title class="headline">友情链接</v-list-item-title></v-list-item-content></v-list-item>
         <friend-links :dark="dark"></friend-links>
-        <van-divider
-            :style="{ borderColor: '#2196f3', padding: '0 16px' }"
-        >
-        </van-divider>
+          <v-divider
+                  inset
+          ></v-divider>
+          <v-list-item :dark="dark"><v-list-item-content><v-list-item-title class="headline">教程推荐</v-list-item-title></v-list-item-content></v-list-item>
+          <tutorial :dark="dark"></tutorial>
+          <v-divider
+                  inset
+          ></v-divider>
         <f-footer :dark="dark"></f-footer>
 
         <aplayer :audio="audio" :lrcType="3" fixed :dark="dark" />
@@ -82,7 +85,9 @@
 </template>
 
 <script>
-// import AppIndexTips from "@/components/AppIndexTips.vue";
+
+
+import Tutorial from "./components/Tutorial.vue";
 
 console.log("%c 邀请您加入我们的开发 %c ".concat("QQ2110146041", " ").concat("添加信息:开发路🐫", " %c"), 'background: #35495e; padding: 1px; border-radius: 3px 0 0 3px; color: #fff', 'background: #fb7299; padding: 1px; border-radius: 0 3px 3px 0; color: #fff', 'background: transparent');
 
@@ -98,7 +103,7 @@ import FDonate from "./components/Donate";
 import FFooter from "./components/Footer";
 import FDonates from "./components/Donates";
 import FPickShow from "./components/PickShow";
-import FBotSteps from "./views/BotSetps";
+import FBotSteps from "./components/BotSetps.vue";
 import FriendLinks from "@/components/FriendLinks.vue";
 import axios from "axios";
 // import FPicslide from "./components/Picslide";
@@ -108,8 +113,8 @@ export default {
   name: "App",
   metaInfo: require("./data/meta.json"),
   components: {
+      Tutorial,
     FriendLinks,
-    // AppIndexTips,
     // FMainNewYear,
     FNavbarList,
     FMainTitle,

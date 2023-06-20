@@ -13,7 +13,6 @@
             <br />
             <div class="test-subtitle-1">{{ slogan }}</div>
           <div>
-<!--            <div class="test-subtitle-1">{{newline}}</div>-->
           </div>
         </div>
         <div class="d-none d-sm-block f-icon">
@@ -24,13 +23,10 @@
 
 <script>
 // import {daysInMonth} from "vuetify/src/components/VCalendar/util/timestamp";
-// import newLine from '../assets/newLines'
 export default {
     data() {
         return require("../data/title.json")
     },
-
-
 };
 </script>
 

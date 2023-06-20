@@ -19,9 +19,6 @@
 
 <script>
 export default {
-  data(){
-
-  },
   props: {
     dark: {
       type: Boolean,

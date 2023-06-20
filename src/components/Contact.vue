@@ -30,6 +30,10 @@
                                         style="background-color: #fb7299"
                                         class="text-h5 lighten-2"
                                 >{{ botsetps.title }}</v-card-title>
+                                <v-card-subtitle
+                                    class=" lighten-2"
+                                    style="background-color: #fb7299">Tips</v-card-subtitle>
+                                <v-spacer></v-spacer>
                                 <v-card-text>{{ botsetps.contact.contact1 }}</v-card-text>
                                 <v-spacer></v-spacer>
                                 <v-card-actions>

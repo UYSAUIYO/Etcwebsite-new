@@ -53,48 +53,6 @@
         "color": "deep-purple"
     },
     {
-        "text": "教 程",
-        "data": [
-            {
-                "href": "https://minecraft.fandom.com/zh/wiki/Minecraft_Wiki?variant=zh",
-                "text": "我的世界WiKi",
-                "color": "#4c3f5b"
-            },
-            {
-                "href": "https://b23.tv/6Atxnpm",
-                "text": "喷射合成",
-                "color": "#175ceb"
-            },
-            {
-                "href": "https://www.bilibili.com/video/BV1NV411o7t2",
-                "text": "Tweaker模组"
-            },
-            {
-                "href": "https://www.bilibili.com/video/BV1yk4y1y7Cj",
-                "text": "投影模组使用"
-            },
-            {
-                "href": "https://www.bilibili.com/video/BV1XC4y1H7P9",
-                "text": "Itemscroller教程"
-            },
-            {
-                "href": "https://www.bilibili.com/video/BV1zi4y1u7M6",
-                "text": "Minihud教程"
-            },
-            {
-                "href": "https://www.bilibili.com/video/BV1Qf4y157qk",
-                "text": "OMMC教程"
-            },
-            {
-                "href": "https://www.bilibili.com/video/BV1Ar4y1g71r",
-                "text": "Gadget教程"
-            }
-        ],
-        "icon": "package-variant-closed",
-        "link": null,
-        "color": "deep-purple"
-    },
-    {
         "text": "友情链接",
         "data": null,
         "icon": "link-variant",

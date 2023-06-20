@@ -30,7 +30,6 @@ export default {
   data() {
     return {
       tag: require("../data/chips.json"),
-      //language: require("../data/language.json"),
       language: [],
     };
   },
