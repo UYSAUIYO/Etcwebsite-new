@@ -207,6 +207,12 @@
 import HtmlText from "./HtmlText.vue";
 export default {
   name: "BotSetps",
+    props: {
+        dark: {
+            type: Boolean,
+            required: true,
+        },
+    },
   components: {HtmlText},
   data() {
     return {
@@ -221,12 +227,7 @@ export default {
         requestNamu4: 'https://api.etherealcraft.cn/api/html/builder' ,
     };
   },
-  props: {
-    dark: {
-      type: Boolean,
-      required: true,
-    },
-  },
+
     methods: {
       openDialog1(){
           this.dialogVisible1 = true;

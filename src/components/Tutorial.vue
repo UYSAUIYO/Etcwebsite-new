@@ -60,6 +60,9 @@ export default {
     height: 330px; /* 设置容器高度 */
     overflow: auto; /* 指定滚动行为 */
 }
+::-webkit-scrollbar {
+    display: none;
+}
 
 .elevation-10 {
     /*background-color: transparent;*/
